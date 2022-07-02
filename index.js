@@ -1,7 +1,11 @@
 const express = require("express");
 const routes = require("./routes/index.js");
 const app = express();
+const cors = require("cors")
 const port = 3001;
+
+app.use(express.json())
+app.use(cors())
 
 //RUTAS DE API
 app.get("/", (req, res) => {

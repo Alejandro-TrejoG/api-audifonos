@@ -1,6 +1,6 @@
 const express = require("express");
-const file_products = require("./products.js");
-const file_users = require("./users.js");
+const file_products = require("./products");
+const file_users = require("./users");
 const router = express.Router();
 
 function routerApi(app) {
