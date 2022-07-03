@@ -51,9 +51,8 @@ class AudifonosService {
       const data = response.docs.map((doc) => doc.data());
       let result = [];
       for (let i = 0; i < data.length; i++) {
-        result.push({ id: ids[i], ...data[i] });
-        if (data[i].usuario != id) {
-          result.splice(i, 1);
+        if (data[i].usuario == id) {
+          result.push({ id: ids[i], ...data[i] });
         }
       }
       return result;
