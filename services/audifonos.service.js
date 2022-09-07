@@ -1,26 +1,18 @@
 // Import the functions you need from the SDKs you need
+const { initializeApp } = require("firebase/app");
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-const { initializeApp } = require("firebase/app");
-const {
-  getFirestore,
-  collection,
-  getDocs,
-  updateDoc,
-  doc,
-  deleteDoc,
-  addDoc,
-} = require("firebase/firestore");
+const { getFirestore, getDocs, addDoc, updateDoc, deleteDoc, collection, doc } = require("firebase/firestore")
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyByGdZdUWlCB3d0xuugHIkJR98rrS1qME0",
-  authDomain: "api-audifonos.firebaseapp.com",
-  projectId: "api-audifonos",
-  storageBucket: "api-audifonos.appspot.com",
-  messagingSenderId: "845246462385",
-  appId: "1:845246462385:web:b873cac42cf3a811bda590",
+  apiKey: "AIzaSyCfJjCWfsrcb2LQCRwZ8T3To5-89rlBYWo",
+  authDomain: "venta-audifonos.firebaseapp.com",
+  projectId: "venta-audifonos",
+  storageBucket: "venta-audifonos.appspot.com",
+  messagingSenderId: "512929694214",
+  appId: "1:512929694214:web:f8286a30641757de677987"
 };
 
 // Initialize Firebase
